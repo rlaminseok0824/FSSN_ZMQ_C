@@ -12,9 +12,18 @@
   * C의 라이브러리인 : czmq를 이용하여 구현하였다.
 
   ### 설치방법
-  https://zeromq.org/languages/c/#czmq를 참고하면 된다. 
+  * https://zeromq.org/languages/c/#czmq 를 참고하면 된다. 혹은 아래의 코드를 복사하면 된다.
 ``` 
     apt-get install libczmq-dev
 ```
+  ### 컴파일방법
+  gcc를 통해 컴파일 할 때 뒤에 -l 옵션에 czmq와 zmq의 헤더를 포함하는 명령어를 지정해주어야한다.
+  
+  ```
+    gcc -o example.o example.c -lczmq -lzmq
+  ```
+
+
+ 
 
 
