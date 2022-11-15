@@ -26,7 +26,7 @@
   ### 구현 파일
   * [REQ-REP](https://github.com/rlaminseok0824/FSSN_ZMQ_C/tree/main/REQ-REP)
     * lec-05-prg-01-req-rep-basic-client.c
-    * lec-05-prg-01-req-rep-basic-server.c
+    * lec-05-prg-02-req-rep-basic-server.c
   * [PUB-SUB](https://github.com/rlaminseok0824/FSSN_ZMQ_C/tree/main/PUB-SUB)
     * lec-05-prg-03-pub-sub-basic-server.c
     * lec-05-prg-04-pub-sub-basic-client.c
