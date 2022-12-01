@@ -24,6 +24,8 @@ int main(){
 		sprintf(s_temp,"%d",temperature);
 		sprintf(s_relhum,"%d",relhumidity);
 		zsock_send(socket,"sss",s_zipcode,s_temp,s_relhum);
+		
+		sleep(0.01);
 		//zstr_send(socket,weather);
 		//
 		//zstr_send로 보내면 하나의 string으로 보내기 때문에 client 측에서 일련의 split작업을 해주어야하지만
