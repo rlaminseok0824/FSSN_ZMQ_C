@@ -205,7 +205,7 @@ int main(int argc,char ** argv){
 	zsock_t * db_client_socket = zsock_new_req(ip_req);
 	zstr_sendf(db_client_socket,"%s %s ",ip_addr, user_name);
 	char * status = zstr_recv(db_client_socket);
-	if(status == "ok"){
+	if(strcmp(status,"ok") == 0){
 		printf("user registration to p2p server completed.\n");
 	}
 	else{
