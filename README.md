@@ -16,14 +16,14 @@
 
   ### 설치방법
   * https://zeromq.org/languages/c/#czmq 를 참고하면 된다. 혹은 아래의 코드를 복사하면 된다.
-``` shell
-    $ apt-get install libczmq-dev
-```
+  ``` shell
+  $ apt-get install libczmq-dev
+  ```
   ### 컴파일방법
   gcc를 통해 컴파일 할 때 뒤에 -l 옵션에 czmq와 zmq의 헤더를 포함하는 명령어를 지정해주어야한다.
 
   ``` shell
-    $ gcc -o example.o example.c -lczmq -lzmq
+  $ gcc -o example.o example.c -lczmq -lzmq
   ```
  
 
@@ -34,16 +34,16 @@
   * 직접 실행해보기
     * 서버 프로그램 먼저 실행시키기. 다음 명령어를 쳐서 서버를 먼저 실행시킨다.
       ``` shell
-        $ ./server
+      $ ./server
       ``` 
     * 다음 다른 명령어창을 띄어 다음 명령어를 쳐서 클라이언트 프로그램을 실행시킨다.
       ```
-        $ ./client
+      $ ./client
       ```
     * 일부 폴더의 예제 같은 경우 추가적인 argv 즉 입력값을 가질 수도 있다. 따라서 다음과 같이 추가적인 입력값을 넣어야한다.
       ```
-       # PUSH-PULL-v2/
-       $ ./client client#1
+      # PUSH-PULL-v2/
+      $ ./client client#1
       ```
   ### 구현 파일
   * [REQ-REP](https://github.com/rlaminseok0824/FSSN_ZMQ_C/tree/main/REQ-REP)
