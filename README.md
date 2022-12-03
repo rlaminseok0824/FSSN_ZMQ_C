@@ -23,6 +23,20 @@
     gcc -o example.o example.c -lczmq -lzmq
   ```
 
+  ### 실행 방법
+    * 각 구현 패턴들마다 폴더를 나누어 저장하였다.(밑에 구현 파일을 통해 확인 가능하다.)
+    * 각 폴더들에는 그것을 구현한 소스코드와 컴파일한 파일들이 있다.
+      *일반적으로 서버 파일은 server 로 클라이언트 파일은 client로 파일이 있다.
+    * 직접 실행해보기
+      *서버 프로그램 먼저 실행시키기. 다음 명령어를 쳐서 서버를 먼저 실행시킨다.
+      ```
+        ./server
+      ``` 
+      * 다음 다른 명령어창을 띄어 다음 명령어를 쳐서 클라이언트 프로그램을 실행시킨다.
+      ```
+        ./client
+      ```
+
   ### 구현 파일
   * [REQ-REP](https://github.com/rlaminseok0824/FSSN_ZMQ_C/tree/main/REQ-REP)
     * lec-05-prg-01-req-rep-basic-client.c
@@ -43,6 +57,14 @@
   * [P2P-DECHAT](https://github.com/rlaminseok0824/FSSN_ZMQ_C/tree/main/P2P-DECHAT)
     * lec-05-prg-12-p2p-dechat.c
 
- 
+  ### 시연 영상
+  * REQ-REP.mp4
+  * PUB_SUB_v1,_v2.mp4 (기존 코드대로 작성한 버전은 v1 하지만 너무 빠른 PUB으로 인해 영상 촬영의 어려움이 생겨 sleep을 넣어 v2 촬영)
+  * PUSH_PULL.mp4
+  * PUSH_PULL_v2.mp4
+  * DEALER_ROUTER_four_thread.mp4
+  * DEALER_ROUTER_single_thread.mp4
+  * P2P_DECHAT.mp4
+
 
 
