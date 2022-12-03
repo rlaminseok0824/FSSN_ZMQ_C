@@ -63,7 +63,10 @@ void ServerWorker(zsock_t *pipe,void * args){
 		printf("Worker#%d received %s from %s\n",id,content,ident);
 		
 		zmsg_destroy(&msg);
-		
+
+
+		//server가 proxy 역할을 할 때에는 client온 정보를 같이 전달해줘야지 worker의 일이 끝난 후
+		//다시 request를 준 client로 돌아갈 수 있기 때문에 sendm을 통해 multi_part로 메세지를 보내야한다.		
 		zstr_sendm(worker,ident);
 		zstr_send(worker,content);
 
