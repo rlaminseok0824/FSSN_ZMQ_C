@@ -3,6 +3,9 @@
 ## 풀스택 주제
  * ### [ZMQ](https://zeromq.org/)
 
+## 운영체제
+ * ### Ubuntu(Linux)
+
 ## 사용 언어
 * ### C
 
@@ -22,6 +25,7 @@
   ```
     gcc -o example.o example.c -lczmq -lzmq
   ```
+ 
 
   ### 실행 방법
   * 각 구현 패턴들마다 폴더를 나누어 저장하였다.(밑에 구현 파일을 통해 확인 가능하다.)
@@ -36,7 +40,11 @@
       ```
         ./client
       ```
-
+    * 일부 폴더의 예제 같은 경우 추가적인 argv 즉 입력값을 가질 수도 있다. 따라서 다음과 같이 추가적인 입력값을 넣어야한다.
+    ```
+     # PUSH-PULL-v2/
+     ./client client#1
+    ```
   ### 구현 파일
   * [REQ-REP](https://github.com/rlaminseok0824/FSSN_ZMQ_C/tree/main/REQ-REP)
     * lec-05-prg-01-req-rep-basic-client.c
@@ -59,7 +67,7 @@
 
   ### 시연 영상
   * REQ-REP.mp4
-  * PUB_SUB_v1,_v2.mp4 (기존 코드대로 작성한 버전은 v1 하지만 너무 빠른 PUB으로 인해 영상 촬영의 어려움이 생겨 sleep을 넣어 v2 촬영)
+  * PUB_SUB_v1,_v2.mp4 (기존 코드대로 작성한 버전은 v1. 하지만 너무 빠른 PUB으로 인해 영상 촬영의 어려움이 생겨 sleep을 넣어 v2 촬영)
   * PUSH_PULL.mp4
   * PUSH_PULL_v2.mp4
   * DEALER_ROUTER_four_thread.mp4
